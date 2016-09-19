@@ -1,0 +1,54 @@
+{
+  "parent": "BMICalc",
+  "methods": [
+    {
+      "name": "BMICalc",
+      "key": "2a4e38e6",
+      "type": "Constructor",
+      "isPublic": true,
+      "isProtected": false,
+      "method": true
+    },
+    {
+      "name": "main",
+      "key": "a2e577ad",
+      "type": "void",
+      "args": [
+        "String[]"
+      ],
+      "isPublic": true,
+      "isProtected": false,
+      "method": true
+    },
+    {
+      "name": "calc",
+      "key": "ea493d72",
+      "type": "float",
+      "args": [
+        "int",
+        "int"
+      ],
+      "isPublic": true,
+      "isProtected": false,
+      "method": true
+    }
+  ],
+  "fields": [
+    {
+      "name": "BMI_CONST",
+      "key": "569931cb",
+      "type": "float",
+      "isPublic": true,
+      "isProtected": false,
+      "method": false
+    },
+    {
+      "name": "BMI_STANDARD",
+      "key": "7bc24a72",
+      "type": "String",
+      "isPublic": false,
+      "isProtected": false,
+      "method": false
+    }
+  ]
+}
