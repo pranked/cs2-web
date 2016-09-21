@@ -1,7 +1,40 @@
 {
-  "name": "problem2",
-  "tests": {
-    "BMICalc": {
+  "name": "Problem 2",
+  "analysis": {
+    "objectives": [
+      "Create an application that calculates the BMI of a person given their weight and height.",
+      "Give the user the BMI standards"
+    ],
+    "inputs": [
+      "Weight - A positive integer, in pounds",
+      "Height - A positive integer, in inches squared"
+    ],
+    "outputs": [
+      "Users provided height and weight",
+      "Users calculated BMI to 2 decimal places",
+      "BMI standard, provided"
+    ],
+    "assumptions": [
+      "Weight is positive and an integer",
+      "Height is positive and an integer"
+    ],
+    "constraints": [
+      "Output BMI to 2 decimals",
+      "No negative inputs",
+      "Inputs are integers"
+    ],
+    "design": [
+      "Ask user to input weight",
+      "Store weight as Absolute value int",
+      "Ask user to input height",
+      "Store height as Absolute value int",
+      "Calculate BMI score using given method",
+      "Print BMI Score with 2 decimals",
+      "Print BMI standards"
+    ]
+  },
+  "testSets": [
+    {
       "parent": "BMICalc",
       "results": [
         {
@@ -18,7 +51,30 @@
         }
       ]
     },
-    "SpaceDigits": {
+    {
+      "parent": "CalcCircumference",
+      "results": [
+        {
+          "passed": true,
+          "duration": 910,
+          "name": "Test Diameter is correct given radius of 6",
+          "output": ""
+        },
+        {
+          "passed": true,
+          "duration": 30,
+          "name": "Test area is correct given radius of 8",
+          "output": ""
+        },
+        {
+          "passed": true,
+          "duration": 4,
+          "name": "Test circumference is correct for given radius of 10",
+          "output": ""
+        }
+      ]
+    },
+    {
       "parent": "SpaceDigits",
       "results": [
         {
@@ -46,38 +102,15 @@
           "output": "1 2 3 4 5 6\n"
         }
       ]
-    },
-    "CalcCircumference": {
-      "parent": "CalcCircumference",
-      "results": [
-        {
-          "passed": true,
-          "duration": 910,
-          "name": "Test Diameter is correct given radius of 6",
-          "output": ""
-        },
-        {
-          "passed": true,
-          "duration": 30,
-          "name": "Test area is correct given radius of 8",
-          "output": ""
-        },
-        {
-          "passed": true,
-          "duration": 4,
-          "name": "Test circumference is correct for given radius of 10",
-          "output": ""
-        }
-      ]
     }
-  },
+  ],
   "descriptions": [
     {
       "parent": "BMICalc",
       "methods": [
         {
           "name": "BMICalc",
-          "key": "2a4e38e6",
+          "key": "c6682a2a",
           "type": "Constructor",
           "isPublic": true,
           "isProtected": false,
@@ -85,7 +118,7 @@
         },
         {
           "name": "main",
-          "key": "a2e577ad",
+          "key": "7a77b02f",
           "type": "void",
           "args": [
             "String[]"
@@ -96,7 +129,7 @@
         },
         {
           "name": "calc",
-          "key": "ea493d72",
+          "key": "b87defb9",
           "type": "float",
           "args": [
             "int",
@@ -110,7 +143,7 @@
       "fields": [
         {
           "name": "BMI_CONST",
-          "key": "569931cb",
+          "key": "a7db419a",
           "type": "float",
           "isPublic": true,
           "isProtected": false,
@@ -118,7 +151,7 @@
         },
         {
           "name": "BMI_STANDARD",
-          "key": "7bc24a72",
+          "key": "4f0d4c4b",
           "type": "String",
           "isPublic": false,
           "isProtected": false,
@@ -131,7 +164,7 @@
       "methods": [
         {
           "name": "CalcCircumference",
-          "key": "64b7c86d",
+          "key": "d9425fca",
           "type": "Constructor",
           "isPublic": true,
           "isProtected": false,
@@ -139,7 +172,7 @@
         },
         {
           "name": "main",
-          "key": "c6ceeca7",
+          "key": "011d5fd3",
           "type": "void",
           "args": [
             "String[]"
@@ -150,7 +183,7 @@
         },
         {
           "name": "area",
-          "key": "749deee5",
+          "key": "0ec52725",
           "type": "double",
           "args": [
             "int"
@@ -161,7 +194,7 @@
         },
         {
           "name": "diameter",
-          "key": "601599d5",
+          "key": "50626a4c",
           "type": "int",
           "args": [
             "int"
@@ -172,7 +205,7 @@
         },
         {
           "name": "circumference",
-          "key": "76b0ca51",
+          "key": "4bbaeaa0",
           "type": "double",
           "args": [
             "int"
@@ -189,7 +222,7 @@
       "methods": [
         {
           "name": "SpaceDigits",
-          "key": "d663c20a",
+          "key": "c1f9e4d1",
           "type": "Constructor",
           "isPublic": true,
           "isProtected": false,
@@ -197,7 +230,7 @@
         },
         {
           "name": "main",
-          "key": "cb70614c",
+          "key": "4ae8d08b",
           "type": "void",
           "args": [
             "String[]"
@@ -208,7 +241,7 @@
         },
         {
           "name": "split",
-          "key": "e8c6fa68",
+          "key": "5d705156",
           "type": "String",
           "args": [
             "int"
@@ -219,7 +252,7 @@
         },
         {
           "name": "isEven",
-          "key": "1bc39b71",
+          "key": "60db7df9",
           "type": "boolean",
           "args": [
             "int"

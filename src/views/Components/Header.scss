@@ -1,0 +1,48 @@
+@import "~bourbon/app/assets/stylesheets/bourbon";
+
+.header-purple {
+  margin-bottom: 25px;
+  .header-title a {
+    float: left;
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #6E316D;
+    font-size: 1.5em;
+    &:hover,
+    &:focus {
+      text-transform: none;
+      text-decoration: none;
+    }
+  }
+  padding-top: 15px;
+  .nav {
+    display: inline-block;
+    li {
+      margin-right: 5px;
+      .selected {
+        @include transition(background-color 0.2s ease-out);
+        background-color: #6E316D;
+        color: #fff;
+      }
+      a {
+        color: #6E316D;
+        @include transition(all 0.2s ease-out);
+        background-color: transparent;
+        &:hover {
+          background-color: #945294;
+          color: #fff;
+          @include transition(all 0.2s ease-in);
+        }
+      }
+    }
+  }
+}
+
+.navbar-top {
+  margin-top: 10px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}

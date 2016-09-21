@@ -9,8 +9,11 @@ const browserHistory = useRouterHistory(useSimpleScroll(history))();
 import routes from './routes.js';
 import './main.scss';
 
+import $ from 'jquery';
+
 // Expose React for dev tool
 window.React = React;
+window.$ = $;
 
 ReactDOM.render(
   <Router history={browserHistory} routes={routes} />,

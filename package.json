@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "axios": "^0.10.0",
+    "bourbon": "^4.2.7",
     "classnames": "^2.2.5",
     "express": "^4.13.4",
     "history": "^2.1.0",
@@ -20,7 +21,7 @@
     "react-bootstrap": "^0.30.3",
     "react-document-title": "^2.0.2",
     "react-dom": "^15.0.1",
-    "react-router": "^2.3.0",
+    "react-router": "^2.8.1",
     "react-side-effect": "^1.0.2",
     "rimraf": "^2.5.2",
     "scroll-behavior": "^0.4.0",
