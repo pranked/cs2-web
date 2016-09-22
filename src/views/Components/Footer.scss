@@ -8,20 +8,24 @@
   background-color: #6E316D;
   margin-top: 50px;
   .sub-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      margin-top: 5px;
+    }
     .sub-header {
       font-weight: bold;
       font-size: 1.1em;
     }
-    list-style: none;
-    padding-left: 0;
-    li {
-      margin-top: 5px;
-    }
   }
   a {
     color: #fff2f9;
-    &:hover {
-      color: #ededed;
+    &:hover,
+    &:focus {
+      color: #fff;
+      text-decoration: none;
+      text-transform: none;
     }
   }
 }
