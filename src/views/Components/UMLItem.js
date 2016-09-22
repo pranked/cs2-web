@@ -5,11 +5,11 @@ const UMLItem = React.createClass({
     const flattenParams = args => {
       let i = 0;
       const flatten = inner => (
-        <span key={i++} className="code-orange">{inner}&nbsp;</span>
+        <span key={i++} className="code-orange">{inner} </span>
       );
       return (
         <span>
-          <span className="color-gray">(&nbsp;</span>
+          <span className="color-gray">( </span>
           {args.map(flatten)}
           <span className="color-gray">)</span>
         </span>
@@ -18,15 +18,19 @@ const UMLItem = React.createClass({
 
     const flat = item => {
       let x = item.protected ? '#' : (item.public ? '+' : '-');
-      let params = '';
+      let params = (
+        <span>
+          <span className="color-gray">( )</span>
+        </span>
+      );
       if (item.args) {
         params = flattenParams(item.args);
       }
       return (
         <div key={item.key} className="uml-item">
-          <span className="text-muted">{x}&nbsp;</span>
-          <span className="code-pink">{item.type}&nbsp;</span>
-          <span className="code-lightblue">{item.name}&nbsp;</span>
+          <span className="text-muted">{x} </span>
+          <span className="code-pink">{item.type} </span>
+          <span className="code-lightblue">{item.name} </span>
           {params}
         </div>
       );

@@ -14,15 +14,10 @@ export default class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      navs: [
+      navs: [,
         {
-          name: 'Doesnt Work',
-          url: '404',
-          selected: false,
-        },
-        {
-          name: 'Lab 2',
-          url: 'lab2',
+          name: 'Lab 3',
+          url: 'lab3',
           selected: false,
         },
       ],

@@ -12,12 +12,12 @@ const Footer = React.createClass({
               <ul className="sub-list">
                 <li><span className="sub-header">Authored by Dominic Moorman</span></li>
                 <li><a href="http://github.com/pranked">Github</a></li>
-                <li><p>d<span>o</span>m<span>@</span>le<span>vee</span>.co</p></li>
+                <li><a href="mailto:dom@levee.co ">dom@levee.co</a></li>
               </ul>
             </div>
             <div className="col-xs-4"></div>
             <div className="col-xs-4 text-right">
-              <div className="text-small">Copyright &copy; 2016</div>
+              <div className="text-small">Copyright © 2016</div>
               <span>levee.co</span>
             </div>
           </div>

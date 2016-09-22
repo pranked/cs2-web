@@ -43,6 +43,7 @@ export default class TestSet extends React.Component {
     };
     return (
       <div>
+        <h3>Tests</h3>
         {this.props.items.map(tables)}
       </div>
     );

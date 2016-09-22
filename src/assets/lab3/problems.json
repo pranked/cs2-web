@@ -1,0 +1,320 @@
+[
+  {
+    "name": "Problem 1",
+    "testSets": [
+      {
+        "parent": "LetterGrade",
+        "results": [
+          {
+            "passed": true,
+            "duration": 797,
+            "name": "Check 95 is A",
+            "output": ""
+          },
+          {
+            "passed": true,
+            "duration": 2,
+            "name": "Check 85 is B",
+            "output": ""
+          },
+          {
+            "passed": true,
+            "duration": 0,
+            "name": "Check 75 is C",
+            "output": ""
+          },
+          {
+            "passed": true,
+            "duration": 1,
+            "name": "Check 65 is D",
+            "output": ""
+          },
+          {
+            "passed": true,
+            "duration": 10,
+            "name": "Check 55 is F",
+            "output": ""
+          }
+        ]
+      }
+    ],
+    "descriptions": [
+      {
+        "parent": "LetterGrade",
+        "methods": [
+          {
+            "name": "LetterGrade",
+            "key": "2bb2177b",
+            "type": "Constructor",
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          },
+          {
+            "name": "main",
+            "key": "ca7deea3",
+            "type": "void",
+            "args": [
+              "String[]"
+            ],
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          },
+          {
+            "name": "work",
+            "key": "e7e08e9f",
+            "type": "String",
+            "args": [
+              "int"
+            ],
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          }
+        ],
+        "fields": [
+          {
+            "name": "Grader",
+            "key": "8c0434f9",
+            "type": "String[]",
+            "isPublic": false,
+            "isProtected": false,
+            "method": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Problem 2",
+    "testSets": [
+      {
+        "parent": "Account",
+        "results": [
+          {
+            "passed": true,
+            "duration": 1164,
+            "name": "Credit values -1000 to 1000",
+            "output": ""
+          },
+          {
+            "passed": true,
+            "duration": 4,
+            "name": "GetBalance is working",
+            "output": ""
+          },
+          {
+            "passed": true,
+            "duration": 64,
+            "name": "Debit values -1000 to 1000",
+            "output": ""
+          }
+        ]
+      }
+    ],
+    "descriptions": [
+      {
+        "parent": "Account",
+        "methods": [
+          {
+            "name": "Account",
+            "key": "8de62e04",
+            "type": "Constructor",
+            "args": [
+              "double"
+            ],
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          },
+          {
+            "name": "credit",
+            "key": "f4fce83c",
+            "type": "double",
+            "args": [
+              "double"
+            ],
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          },
+          {
+            "name": "debit",
+            "key": "9405c6bd",
+            "type": "double",
+            "args": [
+              "double"
+            ],
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          },
+          {
+            "name": "getBalance",
+            "key": "3e2adaf8",
+            "type": "double",
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          }
+        ],
+        "fields": [
+          {
+            "name": "balance",
+            "key": "00b59b90",
+            "type": "double",
+            "isPublic": false,
+            "isProtected": false,
+            "method": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Problem 3",
+    "analysis": {
+      "objectives": [
+        "Calculate distance from point a to b.",
+        "How long it will take to get there.",
+        "If gas will be required for the return."
+      ],
+      "inputs": [
+        "Initial fuel value",
+        "Multiple 'legs' with distance and speed"
+      ],
+      "outputs": [
+        "Distance traveled",
+        "Time taken",
+        "Gas needed to return"
+      ],
+      "assumptions": [
+        "Miles per gallon is 20MPGH",
+        "Inputs are positive double values."
+      ],
+      "constraints": [
+        "Must use a loop",
+        "Must use a sentinel"
+      ],
+      "design": [
+        "Ask user for fuel level.",
+        "Ask user for first leg (input as '10, 60' where 10 is the distance and 60 is the speed)",
+        "Add distance to distance traveled",
+        "Divide distance by speed and multiply by 60 to get minutes and add to total",
+        "Repeat from step 2 till user returns a blank line",
+        "Find out if we can return by take given fuel and subtract it by miles driving times MPGH times 2",
+        "When finished print time driving, miles driven and if a return trip can be made without more fuel."
+      ]
+    },
+    "testSets": [
+      {
+        "parent": "YourCarTrip",
+        "results": [
+          {
+            "passed": true,
+            "duration": 1262,
+            "name": "Drive miles 1-1000 at 60mph",
+            "output": ""
+          }
+        ]
+      }
+    ],
+    "descriptions": [
+      {
+        "parent": "YourCarTrip",
+        "methods": [
+          {
+            "name": "YourCarTrip",
+            "key": "33898527",
+            "type": "Constructor",
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          },
+          {
+            "name": "main",
+            "key": "46e660be",
+            "type": "void",
+            "args": [
+              "String[]"
+            ],
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          },
+          {
+            "name": "drive",
+            "key": "3b2d8229",
+            "type": "void",
+            "args": [
+              "double",
+              "int"
+            ],
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          },
+          {
+            "name": "getDistance",
+            "key": "1b596458",
+            "type": "double",
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          },
+          {
+            "name": "getGallons",
+            "key": "d1d862b1",
+            "type": "double",
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          },
+          {
+            "name": "getMinutes",
+            "key": "baf4297e",
+            "type": "double",
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          }
+        ],
+        "fields": [
+          {
+            "name": "AvgMPG",
+            "key": "1e21d2c8",
+            "type": "int",
+            "isPublic": false,
+            "isProtected": false,
+            "method": false
+          },
+          {
+            "name": "distance",
+            "key": "743586d5",
+            "type": "double",
+            "isPublic": false,
+            "isProtected": false,
+            "method": false
+          },
+          {
+            "name": "minutes",
+            "key": "2573a48c",
+            "type": "double",
+            "isPublic": false,
+            "isProtected": false,
+            "method": false
+          },
+          {
+            "name": "gallons",
+            "key": "28ae031b",
+            "type": "double",
+            "isPublic": false,
+            "isProtected": false,
+            "method": false
+          }
+        ]
+      }
+    ]
+  }
+]
