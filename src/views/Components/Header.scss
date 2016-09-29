@@ -27,7 +27,6 @@
         color: #fff;
       }
       a {
-        color: #6E316D;
         @include transition(all 0.2s ease-out);
         background-color: transparent;
         &:hover {

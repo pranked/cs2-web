@@ -10,7 +10,7 @@ const Analysis = React.createClass({
   },
   render() {
     let ana;
-    if (this.props.problem.analysis != null) {
+    if (this.props.problem.analysis) {
       ana = (
         <div>
           <h3>Objectives</h3>
@@ -28,11 +28,11 @@ const Analysis = React.createClass({
         </div>);
     }
     let desc;
-    if (this.props.problem.descriptions.length > 0) {
+    if (this.props.problem.descriptions) {
       desc = (<UMLSet descriptions={this.props.problem.descriptions} />);
     }
     let tes;
-    if (this.props.problem.testSets.length > 0) {
+    if (this.props.problem.testSets) {
       tes = <TestSet items={this.props.problem.testSets} />;
     }
     return (

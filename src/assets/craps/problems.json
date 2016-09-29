@@ -1,0 +1,20 @@
+[
+  {
+    "name": "CRAPS",
+    "analysis": {
+      "objectives": [
+        "Roll two die and using craps"
+      ],
+      "inputs": [
+      ],
+      "outputs": [
+      ],
+      "assumptions": [
+      ],
+      "constraints": [
+      ],
+      "design": [
+      ]
+    }
+  }
+]

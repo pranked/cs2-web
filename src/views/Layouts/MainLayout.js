@@ -6,15 +6,17 @@ import Footer from '../Components/Footer';
 const MainLayout = React.createClass({
   render() {
     return (
-      <div>
-        <Header />
-        <div className="container" >
-          {this.props.children}
+      <div className="page-fill">
+        <div className="page-wrap" >
+          <Header />
+          <div className="container" >
+            {this.props.children}
+          </div>
         </div>
         <Footer />
       </div>
     );
-  }
+  },
 });
 
 export default MainLayout;

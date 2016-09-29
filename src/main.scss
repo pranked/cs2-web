@@ -1,18 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import "~bourbon/app/assets/stylesheets/bourbon";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import './util.scss';
 
 body {
   font-family: 'Open Sans', sans-serif, "Helvetica Neue", Arial;
   background-color: #f9f9f9;
+  height: 100%;
 }
 
-.text-small {
-  font-size: 0.8em;
+html {
+  height: 100%;
 }
 
 h1 {
   color: #723C99;
+}
+
+a {
+  color: #6E316D;
+  &:hover,
+  &:focus {
+    color: #723C99;
+  }
+}
+
+#react-root, .page-fill {
+  height: 100%;
+}
+
+.text-small {
+  font-size: 0.8em;
 }
 
 .btn {
@@ -37,4 +55,21 @@ h1 {
 
 .img-circle {
   border: 1px solid #fff;
+}
+
+.page-wrap {
+  min-height: 100%;
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 0 - $footer-height;
+  padding-bottom: 55px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.page-wrap:after {
+  height: $footer-height;
 }

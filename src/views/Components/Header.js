@@ -14,10 +14,20 @@ export default class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      navs: [,
+      navs: [
+        {
+          name: 'Craps',
+          url: '/lab/craps',
+          selected: false,
+        },
         {
           name: 'Lab 3',
-          url: 'lab3',
+          url: '/lab/lab3',
+          selected: false,
+        },
+        {
+          name: 'Lab 4',
+          url: '/lab/lab4',
           selected: false,
         },
       ],

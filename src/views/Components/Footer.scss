@@ -1,12 +1,17 @@
+@import '../../util.scss';
+
 .footer {
+  height: $footer-height;
   font-size: 0.9em;
   padding-top: 40px;
-  padding-bottom: 40px;
   width: 100%;
   color: #fff;
   //border-top: solid 1px #f5f5f5;
   background-color: #6E316D;
-  margin-top: 50px;
+  .badge {
+    background-color: #723C99;
+    color: #fff;
+  }
   .sub-list {
     list-style: none;
     padding: 0;

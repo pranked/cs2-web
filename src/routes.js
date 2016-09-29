@@ -5,13 +5,13 @@ import { Route, IndexRoute } from 'react-router';
 import NotFound from './views/Pages/NotFound';
 import MainLayout from './views/Layouts/MainLayout';
 import Landing from './views/Pages/Landing';
-import Lab3 from './views/Pages/Lab3';
+import Problem from './views/Pages/Problem';
 
 export default [
   <Route>
     <Route path="/" component={MainLayout} >
       <IndexRoute name="home" component={Landing} />
-      <Route name="lab3" path="/lab3" component={Lab3} />
+      <Route path="/lab/:id" component={Problem} />
       <Route path="*" component={NotFound} />
     </Route>
   </Route>,

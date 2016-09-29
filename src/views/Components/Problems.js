@@ -12,8 +12,14 @@ export default class Problems extends React.Component {
       loaded: false,
     };
   }
-  componentDidMount() {
-    $.get(this.props.src, (result) => {
+
+  lookup(src) {
+    console.log(src);
+    this.setState({
+      problems: [],
+      loaded: false,
+    });
+    $.get(src, (result) => {
       let obj = result;
       if (!_.isObject(result)) {
         obj = $.parseJSON(result);
@@ -26,6 +32,15 @@ export default class Problems extends React.Component {
       alert('Failed to load problem data! ');
     });
   }
+
+  componentDidMount() {
+    this.lookup(this.props.src);
+  }
+
+  componentWillReceiveProps(props) {
+    this.lookup(props.src);
+  }
+
   render() {
     if (this.state.loaded !== true) {
       return <Spinner />;

@@ -11,8 +11,9 @@ const Footer = React.createClass({
           <div className="row">
             <div className="col-xs-4">
               <ul className="sub-list">
-                <li><a href="https://github.com/pranked"><img className="img-circle" src="https://avatars1.githubusercontent.com/u/9093726" alt="" width={size} height={size} /> <span className="sub-header">Created by @pranked</span></a></li>
-                <li><a href="mailto:dom@levee.co ">dom@levee.co</a></li>
+                <li className="sub-header">
+                  <a href="https://github.com/pranked"><img className="img-circle" src="https://avatars1.githubusercontent.com/u/9093726" alt="" width={size} height={size} /> Created by @pranked</a>
+                </li>
               </ul>
             </div>
             <div className="col-xs-4"></div>

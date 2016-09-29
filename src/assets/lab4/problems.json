@@ -1,0 +1,145 @@
+[
+  {
+    "name": "Problem 4",
+    "analysis": {
+      "objectives": [
+        "List the the months and their corresponding days.",
+        "Take leap year into account.",
+        "Each month corresponds to a number."
+      ],
+      "inputs": [
+        "A year to print the dates for."
+      ],
+      "outputs": [
+        "Month and the days in the month."
+      ],
+      "assumptions": [
+        "NA"
+      ],
+      "constraints": [
+        "Must address leap year."
+      ],
+      "design": [
+        "Store a year to operate on.",
+        "Create new calendar and set the year based on input, and store it.",
+        "Call a function 'next' to go to the next month.",
+        "In changing the month add one month to the Calendar, and store the current month number for easier access.",
+        "Next should return the number of days in the current month before moving.",
+        "To get the number of days query the Calendar for the max value of days that month.",
+        "To address whether or not it is leap year query the Calendar for the number of days.",
+        "If the number of days is greater than 365 it is a leap year.",
+        "Crete a function 'month' and use a switch statement to see which month it is and return the name of the month.",
+        "Lastly create a method to iterate over the DaysInMonth object to print the month and the date."
+      ]
+    },
+    "testSets": [
+      {
+        "parent": "DaysInMonth",
+        "results": [
+          {
+            "passed": true,
+            "duration": 1241,
+            "name": "Ensure leap year check is working",
+            "output": ""
+          },
+          {
+            "passed": true,
+            "duration": 66,
+            "name": "Month iteration is working",
+            "output": ""
+          }
+        ]
+      }
+    ],
+    "descriptions": [
+      {
+        "parent": "DaysInMonth",
+        "methods": [
+          {
+            "name": "DaysInMonth",
+            "key": "689bee9e",
+            "type": "Constructor",
+            "args": [
+              "int"
+            ],
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          },
+          {
+            "name": "main",
+            "key": "577f8115",
+            "type": "void",
+            "args": [
+              "String[]"
+            ],
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          },
+          {
+            "name": "next",
+            "key": "32d269b5",
+            "type": "int",
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          },
+          {
+            "name": "getMonthNum",
+            "key": "6a196d08",
+            "type": "int",
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          },
+          {
+            "name": "eval",
+            "key": "048b3f18",
+            "type": "void",
+            "args": [
+              "DaysInMonth"
+            ],
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          },
+          {
+            "name": "month",
+            "key": "de787e73",
+            "type": "String",
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          },
+          {
+            "name": "isLeapYear",
+            "key": "258458b1",
+            "type": "boolean",
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          }
+        ],
+        "fields": [
+          {
+            "name": "Cal",
+            "key": "0b87031b",
+            "type": "Calendar",
+            "isPublic": false,
+            "isProtected": false,
+            "method": false
+          },
+          {
+            "name": "iteration",
+            "key": "f8fe97a8",
+            "type": "int",
+            "isPublic": false,
+            "isProtected": false,
+            "method": false
+          }
+        ]
+      }
+    ]
+  }
+]
