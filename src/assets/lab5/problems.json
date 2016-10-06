@@ -1,0 +1,138 @@
+[
+  {
+    "name": "Problem 5",
+    "analysis": {
+      "objectives": [
+        "Calculate the area of three different shapes: circle, rectangle, and a triangle.",
+        "Utilize two separate classes: one for calculating area and another to keep track of the total."
+      ],
+      "inputs": [
+        "Type of shape",
+        "Width, height or radius."
+      ],
+      "outputs": [
+        "Total area in square units."
+      ],
+      "assumptions": [
+        "NA"
+      ],
+      "constraints": [
+        "CalcArea must not keep track of the total area.",
+        "Must use for or while loop to collect data."
+      ],
+      "design": [
+        "Inside Calc Area create a public static method Rectangle returning a double, and accepting two parameters",
+        "Rectangle will return a double by multiplying width * height",
+        "Inside Calc Area create a public static method Triangle returning a double, and accepting two parameters",
+        "Triangle will return a double by multiplying (height * width) / 2",
+        "Inside Calc Area create a public static method Circle returning a double, and accepting one parameter",
+        "Circle will return a double by multiplying (rad * rad) * Pi",
+        "Total area will contain the main method",
+        "Loop and collect input from the user in the order 'rectangle width height' etc.",
+        "Use Calc Area to generate an area and add to the running total",
+        "When the user enters an empty line end the program and print the total."
+      ]
+    },
+    "testSets": [
+      {
+        "parent": "CalcArea",
+        "results": [
+          {
+            "passed": true,
+            "duration": 999,
+            "name": "Circle",
+            "output": ""
+          },
+          {
+            "passed": true,
+            "duration": 62,
+            "name": "Rectangle",
+            "output": ""
+          },
+          {
+            "passed": true,
+            "duration": 52,
+            "name": "Triangle",
+            "output": ""
+          }
+        ]
+      }
+    ],
+    "descriptions": [
+      {
+        "parent": "CalcArea",
+        "methods": [
+          {
+            "name": "CalcArea",
+            "key": "9370da8f",
+            "type": "Constructor",
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          },
+          {
+            "name": "Triangle",
+            "key": "67ab48e2",
+            "type": "double",
+            "args": [
+              "double",
+              "double"
+            ],
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          },
+          {
+            "name": "Circle",
+            "key": "4ed70815",
+            "type": "double",
+            "args": [
+              "double"
+            ],
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          },
+          {
+            "name": "Rectangle",
+            "key": "0c20f3fe",
+            "type": "double",
+            "args": [
+              "double",
+              "double"
+            ],
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          }
+        ],
+        "fields": []
+      },
+      {
+        "parent": "TotalArea",
+        "methods": [
+          {
+            "name": "TotalArea",
+            "key": "b67913ab",
+            "type": "Constructor",
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          },
+          {
+            "name": "main",
+            "key": "92f39214",
+            "type": "void",
+            "args": [
+              "String[]"
+            ],
+            "isPublic": true,
+            "isProtected": false,
+            "method": true
+          }
+        ],
+        "fields": []
+      }
+    ]
+  }
+]

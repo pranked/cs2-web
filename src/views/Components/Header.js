@@ -30,6 +30,11 @@ export default class Header extends React.Component {
           url: '/lab/lab4',
           selected: false,
         },
+        {
+          name: 'Lab 5',
+          url: '/lab/lab5',
+          selected: false,
+        },
       ],
     };
   }
